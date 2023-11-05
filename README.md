@@ -12,5 +12,5 @@ exit
 
 ## setup zshenv
 ```bash
-./setup
+./setup.sh
 ```
