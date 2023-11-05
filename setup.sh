@@ -9,4 +9,4 @@ sudo rm go1.21.3.linux-amd64.tar.gz
 git config --global user.name "haton14"
 git config --global user.email "haton14@haton14.com"
 # Volta
-curl https://get.volta.sh | bash
+curl https://get.volta.sh | bash -s -- --skip-setup
