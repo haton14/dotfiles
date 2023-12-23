@@ -5,7 +5,7 @@ haton14のdotfiles
 ```bash
 sudo apt update
 sudo apt upgrade
-sudo apt install gh make
+sudo apt install gh make language-pack-ja
 ```
 
 ## setup zsh
