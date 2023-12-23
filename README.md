@@ -6,6 +6,8 @@ haton14のdotfiles
 sudo apt update
 sudo apt upgrade
 sudo apt install gh make language-pack-ja
+# gh経由でGitHubのssh鍵を作成する
+gh auth login
 ```
 
 ## setup zsh
