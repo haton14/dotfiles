@@ -12,6 +12,10 @@ link:
 setup:
 	./setup.sh
 
+.PHONY: k3s-install
+k3s-install:
+	curl -sfL https://get.k3s.io | sh -s - --write-kubeconfig-mode 644
+
 .PHONY: docker-install
 docker-install:
 	sudo apt install ca-certificates curl gnupg lsb-release
