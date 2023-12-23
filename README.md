@@ -1,5 +1,5 @@
 # dotfiles
-haton14のdotfiles
+haton14のdotfiles for Ubuntu
 
 ## pre setup
 ```bash
