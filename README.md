@@ -1,16 +1,20 @@
 # dotfiles
 haton14のdotfiles
 
-基本的にはpreztoをforkして設定している
+## pre setup
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt install gh make
+```
 
 ## setup zsh
 ```bash
-bash pre-zsh-setup.sh
-./zsh-setup.sh
-exit
+make zsh-install
+make link
 ```
 
-## setup zshenv
+## setup
 ```bash
-./setup.sh
+make setup
 ```
