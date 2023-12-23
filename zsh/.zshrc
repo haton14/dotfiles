@@ -1,3 +1,6 @@
+# sheldon
+eval "$(sheldon source)"
+
 # prompt git branch
 setopt PROMPT_SUBST
 PS1='%F{green}%n@%m:%F{cyan}%~$(parse_git_branch)
@@ -35,5 +38,3 @@ export SAVEHIST=10000
 # tab+h
 zle -N widget::history
 bindkey '^Ih' widget::history
-
-
