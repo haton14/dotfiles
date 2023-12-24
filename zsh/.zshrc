@@ -38,3 +38,6 @@ export SAVEHIST=10000
 # tab+h
 zle -N widget::history
 bindkey '^Ih' widget::history
+
+# Rye
+source "$HOME/.rye/env"

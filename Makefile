@@ -30,3 +30,8 @@ docker-install:
 docker-chmod:
 	sudo usermod -aG docker haton14
 	sudo chmod a+rw /var/run/docker.sock
+
+.PHONY: python-install
+python-install:
+	rye config --set-bool behavior.global-python=true
+	rye fetch cpython@3.12.0

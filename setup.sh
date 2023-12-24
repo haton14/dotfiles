@@ -23,3 +23,6 @@ go install github.com/x-motemen/ghq@latest
 # sheldon
 curl --proto '=https' -fLsS https://rossmacarthur.github.io/install/crate.sh \
     | bash -s -- --repo rossmacarthur/sheldon --to ~/.local/bin
+
+# Python
+curl -sSf https://rye-up.com/get | bash
