@@ -16,6 +16,12 @@ setup:
 k3s-install:
 	curl -sfL https://get.k3s.io | sh -s - --write-kubeconfig-mode 644
 
+.PHONY: k3s-kill
+k3s-kill:
+	systemctl stop k3s
+	systemctl disable k3s
+	k3s-killall.sh
+
 .PHONY: docker-install
 docker-install:
 	sudo apt install ca-certificates curl gnupg lsb-release
