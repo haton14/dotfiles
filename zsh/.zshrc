@@ -34,6 +34,19 @@ widget::history() {
 export HISTFILE="${HOME}/dotfiles/zsh/.zsh_history"
 export HISTSIZE=10000
 export SAVEHIST=10000
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt globdots
+setopt append_history
+setopt extended_history
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+setopt hist_reduce_blanks
+setopt hist_save_no_dups
+setopt interactive_comments
+setopt share_history
+setopt magic_equal_subst
+setopt print_eight_bit
 
 # tab+h
 zle -N widget::history
