@@ -1,5 +1,6 @@
 #!/bin/zsh
 git config --global core.pager cat
+git config --global core.editor vim
 
 # Go
 wget https://go.dev/dl/go1.21.6.linux-amd64.tar.gz
