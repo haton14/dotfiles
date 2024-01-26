@@ -15,10 +15,5 @@ VOLTA_HOME=$HOME/.volta
 PATH=$VOLTA_HOME/bin:$PATH
 export VOLTA_FEATURE_PNPM=1
 
-# npm
-if command -v npm &> /dev/null; then
-    PATH=`npm prefix --location=global`/bin:$PATH
-fi
-
 # Rust
 . "$HOME/.cargo/env"
