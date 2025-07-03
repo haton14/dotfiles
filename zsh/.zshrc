@@ -17,7 +17,7 @@ fgh() {
   cd "$(ghq root)/$(ghq list >/dev/null | fzf)"
   zle reset-prompt
 }
-# tab+j
+# tab+[
 zle -N fgh
 bindkey '^I[' fgh
 
@@ -52,5 +52,5 @@ setopt print_eight_bit
 zle -N widget::history
 bindkey '^Ih' widget::history
 
-# Rye
-source "$HOME/.rye/env"
+# # Rye
+# source "$HOME/.rye/env"

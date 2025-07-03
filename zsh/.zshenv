@@ -10,10 +10,10 @@ PATH=$HOME/.local/bin:$PATH
 PATH=/usr/local/go/bin:$PATH
 PATH=$HOME/go/bin:$PATH
 
-# Volta
-VOLTA_HOME=$HOME/.volta
-PATH=$VOLTA_HOME/bin:$PATH
-export VOLTA_FEATURE_PNPM=1
+# # Volta
+# VOLTA_HOME=$HOME/.volta
+# PATH=$VOLTA_HOME/bin:$PATH
+# export VOLTA_FEATURE_PNPM=1
 
-# Rust
-. "$HOME/.cargo/env"
+# # Rust
+# . "$HOME/.cargo/env"
