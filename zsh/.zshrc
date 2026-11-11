@@ -14,7 +14,10 @@ parse_git_branch() {
 
 # ghqをfzfにパクパクさせる
 fgh() {
-  cd "$(ghq root)/$(ghq list >/dev/null | fzf)"
+  local repo="$(ghq list | fzf)"
+  if [ -n "$repo" ]; then
+    cd "$(ghq root)/$repo"
+  fi
   zle reset-prompt
 }
 # tab+[
