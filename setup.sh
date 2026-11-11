@@ -11,10 +11,6 @@ sudo rm go1.24.4.linux-amd64.tar.gz
 # git config --global user.name "haton14"
 # git config --global user.email "haton14@haton14.com"
 
-# # Volta
-# curl https://get.volta.sh | bash -s -- --skip-setup
-# volta install node
-
 # fzf
 sudo apt install fzf
 
@@ -25,5 +21,3 @@ go install github.com/x-motemen/ghq@latest
 curl --proto '=https' -fLsS https://rossmacarthur.github.io/install/crate.sh \
     | bash -s -- --repo rossmacarthur/sheldon --to ~/.local/bin
 
-# # Python
-# curl -sSf https://rye-up.com/get | bash

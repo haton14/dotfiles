@@ -52,5 +52,3 @@ setopt print_eight_bit
 zle -N widget::history
 bindkey '^Ih' widget::history
 
-# # Rye
-# source "$HOME/.rye/env"
