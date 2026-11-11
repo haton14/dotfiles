@@ -3,21 +3,20 @@ git config --global core.pager cat
 git config --global core.editor vim
 
 # Go
-wget https://go.dev/dl/go1.24.4.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.24.4.linux-amd64.tar.gz
-sudo rm go1.24.4.linux-amd64.tar.gz
+GO_VERSION=1.27.4
+case "$(uname -m)" in
+  arm64) GO_ARCH=arm64 ;;
+  *) GO_ARCH=amd64 ;;
+esac
+GO_TARBALL="go${GO_VERSION}.darwin-${GO_ARCH}.tar.gz"
+curl -fLO "https://go.dev/dl/${GO_TARBALL}"
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf "${GO_TARBALL}"
+rm "${GO_TARBALL}"
 
 # # Git
 # git config --global user.name "haton14"
 # git config --global user.email "haton14@haton14.com"
 
-# fzf
-sudo apt install fzf
-
-# ghq
-go install github.com/x-motemen/ghq@latest
-
-# sheldon
-curl --proto '=https' -fLsS https://rossmacarthur.github.io/install/crate.sh \
-    | bash -s -- --repo rossmacarthur/sheldon --to ~/.local/bin
+# fzf, ghq, sheldon
+brew install fzf ghq sheldon
 
